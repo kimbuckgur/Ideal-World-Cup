@@ -1,16 +1,17 @@
-import React,{useRef} from "react";
+import React from "react";
 
 
 function Select_window({Select_ON_OFF_Switch,Set_Round_Num,Round_Num}) {
     const select_choice = (e) => {
         Set_Round_Num(e.target.value)
+        console.log(Round_Num)
     }
     return (
         <div className="Select_FULL">
             <div className="Select_Box">
                 <div className="Select_Box_head">
-                    <span id="main_text">야식 월드컵</span>
-                    <p>가장 맛있는 야식을 찾아라</p>
+                    <span id="main_text">월드컵</span>
+                    <p>내가 맘에드는 숫자를 골라라</p>
                 </div>
                 <div className="Select">
                     <span className="Select_margin">
